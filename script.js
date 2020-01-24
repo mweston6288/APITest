@@ -22,10 +22,10 @@ function test(){
     query = "Obama"
 
     $.ajax({
-        url: "https://api.nytimes.com/svc/search/v2/articlesearch.json?q="+query+"&api-key="+APIkey,
+        url: "https://api.nytimes.com/svc/search/v2/articlesearch.json?q="+query+"&api-key="+APIKey,
         method: "GET"
     }).then(function(response){
         console.log(response)
     })
 }
-Test()
+test()
