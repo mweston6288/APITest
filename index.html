@@ -4,42 +4,496 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>New york Times</title>
+    <meta name="description" content="Mohamed Ibrahim - Full-Stack Web Developer & Account Manager Portfolio">
+    <title>Mohamed Ibrahim | Full-Stack Developer & Account Manager</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/styles.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </head>
-<header class="wrapper">
-    <img src="assets/Capture.PNG" style="width: 900px;">
-</header>
-<body class = "wrapper">
-    <form class="border">
-    <div class="form-group">
-    <label for="exampleFormControlInput1">Search Terms</label>
-    <input id="search" class="form-control" id="exampleFormControlInput1">
-    </div>
-   <div class="form-group">
-    <label for="exampleFormControlSelect1">Example select</label>
-    <select class="form-control" id="noRecords">
-      <option>1</option>
-      <option>5</option>
-      <option>10</option>
-    </select>
-    <label for="exampleFormControlSelect1">start year</label>
-    <input id="startYear" class="form-control">
-    <label for="exampleFormControlSelect1">end year</label>
-    <input id="endYear" class="form-control">
-    <button type="button" class="btn btn-primary" id ="searchButton">Primary</button>
-     <button type="button" class="btn btn-secondary"id = "clearButton">Secondary</button>
-  </div>
-  </form>
-  <form id="top-articles" class="border">
-    <label for="exampleFormControlInput1">Top Articles</label>
-  </form>
-  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
-  <!-- Code to the JavaScript File -->
-  <script src="script.js"></script>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">MI</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="hero-greeting">Hi, I'm</span>
+                <span class="hero-name">Mohamed Ibrahim</span>
+            </h1>
+            <p class="hero-subtitle">Full-Stack Web Developer & Experienced Account Manager</p>
+            <p class="hero-description">Bridging hospitality excellence with modern web development</p>
+            <div class="hero-cta">
+                <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                <a href="#about" class="btn btn-secondary">Learn More</a>
+            </div>
+            <div class="hero-social">
+                <a href="https://www.linkedin.com/in/mohamed-ibrahim-1bba191b/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                    </svg>
+                </a>
+                <a href="https://github.com/muhmds289" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                </a>
+                <a href="mailto:muhmdsibrahim@gmail.com" aria-label="Email">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>Scroll Down</span>
+            <div class="scroll-indicator"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-intro">
+                        Results-oriented professional with a unique blend of <strong>15+ years in travel & hospitality</strong> 
+                        and modern <strong>full-stack web development</strong> expertise.
+                    </p>
+                    <p>
+                        Throughout my career in the travel and hospitality sector, I've specialized in client-centered solutions 
+                        for Asia, Middle East North Africa, and North America, focusing on digital transformation and e-commerce. 
+                        I've maintained a <strong>70%+ client loyalty rate</strong> while driving revenue growth and enhancing 
+                        customer retention.
+                    </p>
+                    <p>
+                        During my career break (2021-Present), I pursued professional development in IT, completing comprehensive 
+                        certifications in <strong>Full-Stack Web Development, UX Design, Technical Support, and Scrum Methodology</strong>. 
+                        I traveled across Europe and the USA, gaining broader perspectives on international cultures while staying 
+                        current with IT innovations in travel and customer support.
+                    </p>
+                    <p>
+                        I'm now leveraging my hospitality expertise and technical skills to create exceptional digital experiences 
+                        that bridge customer service excellence with modern web technologies.
+                    </p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <h3>15+</h3>
+                        <p>Years Experience</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>70%+</h3>
+                        <p>Client Loyalty Rate</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>5</h3>
+                        <p>Languages</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>100+</h3>
+                        <p>Clients Managed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Expertise</h2>
+            <div class="skills-grid">
+                <!-- Web Development -->
+                <div class="skill-category">
+                    <h3 class="category-title">Web Development</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">HTML & CSS</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">React & Redux</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Node.js</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">SQL & MongoDB</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="70"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Git & Version Control</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Professional Skills -->
+                <div class="skill-category">
+                    <h3 class="category-title">Professional Skills</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Customer Relations (CRM)</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Project Management</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">UX/UI Design</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Technical Support</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Agile/Scrum</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Revenue Analysis</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Languages -->
+                <div class="skill-category">
+                    <h3 class="category-title">Languages</h3>
+                    <div class="language-grid">
+                        <div class="language-card">
+                            <div class="language-name">Arabic</div>
+                            <div class="language-level">Native</div>
+                        </div>
+                        <div class="language-card">
+                            <div class="language-name">English</div>
+                            <div class="language-level">Fluent</div>
+                        </div>
+                        <div class="language-card">
+                            <div class="language-name">French</div>
+                            <div class="language-level">Intermediate</div>
+                        </div>
+                        <div class="language-card">
+                            <div class="language-name">Italian</div>
+                            <div class="language-level">Intermediate</div>
+                        </div>
+                        <div class="language-card">
+                            <div class="language-name">Luxembourgish</div>
+                            <div class="language-level">Intermediate</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Professional Experience</h2>
+            <div class="timeline">
+                <!-- Career Break -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2021 - Present</div>
+                        <h3>Professional Development & Travel</h3>
+                        <h4>Career Break | Europe</h4>
+                        <ul>
+                            <li>Completed Full-Stack Web Development boot camp at University of Central Florida</li>
+                            <li>Earned certifications in UX Design, Technical Support, and Scrum Master (CSM)</li>
+                            <li>Traveled across Europe and USA, gaining international cultural perspectives</li>
+                            <li>Stayed current with IT innovations in travel management systems and web technologies</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- IACE Travel -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Sep 2019 - May 2020</div>
+                        <h3>Travel Sales Agent (Japan / Asia)</h3>
+                        <h4>IACE TRAVEL | Orlando, United States</h4>
+                        <ul>
+                            <li>Managed travel arrangements for 40 corporate clients across Asia using Sabre GDS system</li>
+                            <li>Reduced customer churn by 30% through analyzing feedback and improving support processes</li>
+                            <li>Maintained expertise in airline rules, regulations, and fare requirements</li>
+                            <li>Handled corporate bookings for Mitsubishi Hitachi power systems worldwide</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- WebBeds -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2015 - 2019</div>
+                        <h3>Senior Yielding & Sales Support (AMENA)</h3>
+                        <h4>WebBeds by WebJet MENA & GCC | Dubai, UAE</h4>
+                        <ul>
+                            <li>Established 20+ long-term relationships contributing to channel success in MEA region</li>
+                            <li>Increased customer base by 8% through superior service and critical case handling</li>
+                            <li>Supported 100+ agents with technology needs across Qatar, Saudi, Kuwait, Bahrain, Tunisia, Morocco</li>
+                            <li>Reduced overbooking incidents by 15% and improved booking efficiency by 10%</li>
+                            <li>Resolved critical complaints within 24 hours, significantly improving satisfaction scores</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Lots of Hotels -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2012 - 2015</div>
+                        <h3>Sales Support Specialist (Startup Team)</h3>
+                        <h4>Lots of Hotels by Webjet MENA | Dubai, UAE</h4>
+                        <ul>
+                            <li>Supported 100+ clients troubleshooting account and technical issues in MEA & GCC</li>
+                            <li>Enhanced customer satisfaction rating by 15% through optimizing CRM processes</li>
+                            <li>Administered customer pricing agreements driving increased revenue and loyalty</li>
+                            <li>Collaborated with sales and marketing teams to adjust pricing strategies</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Viceroy -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2010 - 2012</div>
+                        <h3>Reservations, Revenue Assistant Manager</h3>
+                        <h4>Viceroy Yas Hotel Abu Dhabi | Yas Island, UAE</h4>
+                        <ul>
+                            <li>Employee of the Month Award for 3 consecutive times</li>
+                            <li>Managed VIP reservations during Grand Prix Formula1 Race & World Economic Forum</li>
+                            <li>Enhanced team efficiency by 30% through new reservation software implementation</li>
+                            <li>Increased room occupancy rates by 20% through strategic pricing adjustments</li>
+                            <li>Achieved 25% reduction in booking errors via staff training programs</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Hyatt -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2005 - 2010</div>
+                        <h3>Reservations Agent</h3>
+                        <h4>Hyatt Hotels | Sharm al Shaykh, Egypt</h4>
+                        <ul>
+                            <li>Boosted customer satisfaction scores by 15% through streamlined confirmation procedures</li>
+                            <li>Reduced booking errors by 25% via enhanced customer verification processes</li>
+                            <li>Demonstrated expertise in reservation systems (Sabre, Opera, Amadeus)</li>
+                            <li>Excelled in problem-solving for overbooking and rate discrepancies</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+        <div class="container">
+            <h2 class="section-title">Certifications & Education</h2>
+            <div class="cert-grid">
+                <div class="cert-card">
+                    <div class="cert-icon">🎓</div>
+                    <h3>Full Stack Web Development</h3>
+                    <p class="cert-issuer">Trilogy Education - University of Central Florida</p>
+                    <p class="cert-date">May 2020</p>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">📋</div>
+                    <h3>Certified Scrum Master (CSM)</h3>
+                    <p class="cert-issuer">KnowledgeHut</p>
+                    <p class="cert-date">July 2023</p>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">🎨</div>
+                    <h3>Foundations of User Experience (UX) Design</h3>
+                    <p class="cert-issuer">Google</p>
+                    <p class="cert-date">2020</p>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">🔧</div>
+                    <h3>Technical Support Fundamentals</h3>
+                    <p class="cert-issuer">Google</p>
+                    <p class="cert-date">2020</p>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">📱</div>
+                    <h3>Introduction to Mobile Development</h3>
+                    <p class="cert-issuer">Meta via Coursera</p>
+                    <p class="cert-date">2022</p>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">💻</div>
+                    <h3>Introduction to Full-Stack Development</h3>
+                    <p class="cert-issuer">Meta via Coursera</p>
+                    <p class="cert-date">2022</p>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">📊</div>
+                    <h3>Google Project Management Certificate</h3>
+                    <p class="cert-issuer">Google</p>
+                    <p class="cert-date">2021</p>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">🎯</div>
+                    <h3>Critical Thinking Workshop</h3>
+                    <p class="cert-issuer">Digital Learning Hub Luxembourg</p>
+                    <p class="cert-date">2022</p>
+                </div>
+            </div>
+            <div class="education-section">
+                <h3 class="education-title">Education</h3>
+                <div class="education-card">
+                    <h4>Bachelor's Degree in Hotel Revenue Management, Tourism Travel Management</h4>
+                    <p class="education-school">Alexandria University, Alexandria, Egypt</p>
+                    <p class="education-date">2001 - 2005</p>
+                    <p class="education-details">Coursework included food safety, preparation, food handling, hygiene, hotel revenue and travel management</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>I'm currently open to new opportunities in web development, project management, and customer-focused roles. Whether you have a question or just want to say hi, feel free to reach out!</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"/>
+                            </svg>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:muhmdsibrahim@gmail.com">muhmdsibrahim@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-4.198 0-8 3.403-8 7.602 0 4.198 3.469 9.21 8 16.398 4.531-7.188 8-12.2 8-16.398 0-4.199-3.801-7.602-8-7.602zm0 11c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3z"/>
+                            </svg>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Luxembourg</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20 22.621l-3.521-6.795c-.008.004-1.974.97-2.064 1.011-2.24 1.086-6.799-7.82-4.609-8.994l2.083-1.026-3.493-6.817-2.106 1.039c-7.202 3.755 4.233 25.982 11.6 22.615.121-.055 2.102-1.029 2.11-1.033z"/>
+                            </svg>
+                            <div>
+                                <h4>Phone</h4>
+                                <a href="tel:+352661280982">+352-661-280-982</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-social">
+                        <a href="https://www.linkedin.com/in/mohamed-ibrahim-1bba191b/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                            </svg>
+                        </a>
+                        <a href="https://github.com/muhmds289" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Mohamed Ibrahim. All rights reserved.</p>
+            <p>Built with passion and modern web technologies</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
